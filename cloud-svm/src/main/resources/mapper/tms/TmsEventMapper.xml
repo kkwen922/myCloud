@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my.cloud.demo.modules.tms.mapper.TmsEventMapper">
+
+    <!-- 通用查詢mapping结果 -->
+    <resultMap id="BaseResultMap" type="my.cloud.demo.modules.tms.model.TmsEvent">
+        <id column="id" property="id" />
+        <result column="org_id" property="orgId" />
+        <result column="org_sn" property="orgSn" />
+        <result column="org_name" property="orgName" />
+        <result column="device_id" property="deviceId" />
+        <result column="device_sn" property="deviceSn" />
+        <result column="device_name" property="deviceName" />
+        <result column="device_type" property="deviceType" />
+
+        <result column="event_id" property="eventId" />
+        <result column="event_type" property="eventType" />
+        <result column="event_name" property="eventName" />
+
+
+        <result column="object_id" property="objectId" />
+        <result column="event_start_time" property="eventStartTime" />
+        <result column="event_end_time" property="eventEndTime" />
+        <result column="move_time" property="moveTime" />
+        <result column="region_id" property="regionId" />
+        <result column="region_name" property="regionName" />
+        <result column="vehicle_id" property="vehicleId" />
+        <result column="vehicle_name" property="vehicleName" />
+        <result column="create_time" property="createTime" />
+
+
+
+        <result column="event_time" property="eventTime" />
+
+    </resultMap>
+
+</mapper>

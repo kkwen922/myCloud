@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my.cloud.demo.modules.ims.mapper.ImsSalesMapper">
+
+    <!-- 通用查詢mapping结果 -->
+    <resultMap id="BaseResultMap" type="my.cloud.demo.modules.ims.model.ImsSales">
+        <id column="id" property="id" />
+        <result column="sale_id" property="saleId" />
+        <result column="org_id" property="orgId" />
+        <result column="org_sn" property="orgSn" />
+        <result column="org_name" property="orgName" />
+        <result column="device_sn" property="deviceSn" />
+        <result column="device_name" property="deviceName" />
+        <result column="device_type" property="deviceType" />
+
+        <result column="cargo" property="cargo" />
+        <result column="container" property="container" />
+        <result column="product" property="product" />
+        <result column="amount" property="amount" />
+        <result column="volume" property="volume" />
+        <result column="barcode" property="barcode" />
+        <result column="sale_time" property="saleTime" />
+        <result column="create_time" property="createTime" />
+
+    </resultMap>
+
+</mapper>
